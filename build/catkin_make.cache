@@ -1,0 +1,2 @@
+pysdf:robo_pkg
+-DCATKIN_DEVEL_PREFIX=/home/ayush/catkinn_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ayush/catkinn_ws/install -G Unix Makefiles

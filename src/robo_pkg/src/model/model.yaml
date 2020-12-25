@@ -1,0 +1,54 @@
+simple_model:
+ joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 20
+
+ link_2_JOINT_7_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_2_JOINT_7
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+
+ link_0_JOINT_1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_0_JOINT_1
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+ link_0_JOINT_2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_0_JOINT_2
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+
+ link_0_JOINT_3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_0_JOINT_3
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+
+ link_1_JOINT_8_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_1_JOINT_8
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+
+ link_3_JOINT_5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_3_JOINT_5
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+
+ link_4_JOINT_6_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_4_JOINT_6
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+ link_6_JOINT_9_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_6_JOINT_9
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+ link_7_JOINT_10_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_7_JOINT_10
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+ link_8_JOINT_12_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_8_JOINT_12
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}
+ link_9_JOINT_11_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: link_9_JOINT_11
+    pid: {p: 1000000.0, i: 0.0, d: 0.0}

@@ -1,0 +1,456 @@
+<?xml version="1.0" ?>
+<robot name="simple_model">
+  <joint name="link_0_JOINT_0" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_1"/>
+    <origin rpy="0 0 0" xyz="-6.02396  8.00498  0.26813"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_0_JOINT_1" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_2"/>
+    <origin rpy="0 0 0" xyz="-6.02396 -7.89767  0.26813"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_0_JOINT_2" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_3"/>
+    <origin rpy="0      0      3.14159" xyz="6.11662 -8.17006  0.26813"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_0_JOINT_3" type="revolute">
+    <parent link="link_0"/>
+    <child link="link_4"/>
+    <origin rpy="0      0      3.14159" xyz="5.98377 7.60991 0.26813"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_1_JOINT_8" type="revolute">
+    <parent link="link_1"/>
+    <child link="link_9"/>
+    <origin rpy="-3.14159  0       0" xyz="-12.63634   0.14188  -0.20719"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_2_JOINT_7" type="revolute">
+    <parent link="link_2"/>
+    <child link="link_8"/>
+    <origin rpy="3.14159 0      0" xyz="-12.64054   0.16412  -0.2072"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_3_JOINT_5" type="revolute">
+    <parent link="link_3"/>
+    <child link="link_6"/>
+    <origin rpy="0 0 0" xyz="-12.49537  -0.30965  -0.2808"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_4_JOINT_6" type="revolute">
+    <parent link="link_4"/>
+    <child link="link_7"/>
+    <origin rpy="0 0 0" xyz="-12.62812  -0.4691   -0.2808"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_6_JOINT_9" type="revolute">
+    <parent link="link_6"/>
+    <child link="link_10"/>
+    <origin rpy="0 0 0" xyz="-11.8539    1.92304   0.53369"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_7_JOINT_10" type="revolute">
+    <parent link="link_7"/>
+    <child link="link_11"/>
+    <origin rpy="0 0 0" xyz="-11.854     1.92603   0.53369"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_8_JOINT_12" type="revolute">
+    <parent link="link_8"/>
+    <child link="link_12"/>
+    <origin rpy="3.14159 0      3.14159" xyz="-14.0618    1.84878  -0.46009"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <joint name="link_9_JOINT_11" type="revolute">
+    <parent link="link_9"/>
+    <child link="link_13"/>
+    <origin rpy="-3.14159  0       3.14159" xyz="-14.066     1.96218  -0.46009"/>
+    <axis xyz="0 -1  0"/>
+    <limit effort="100" lower="-3.14" upper="3.14" velocity="10"/>
+  </joint>
+  <link name="link_0">
+    <inertial>
+      <mass value="4683.04"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="3622.8453" ixy="0" ixz="0" iyy="1545.1328" iyz="0" izz="4807.0712"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0.04839 -0.23584 17.5"/>
+      <geometry>
+        <mesh filename="../my_robot/main_body.dae"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0.04839 -0.23584 -1.16887"/>
+      <geometry>
+        <mesh filename="../my_robot/main_body.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_1">
+    <inertial>
+      <mass value="235.864554"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="7.6912" ixy="0" ixz="0" iyy="55.3137" iyz="0" izz="49.27456"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_10">
+    <inertial>
+      <mass value="324.9792"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="105.44" ixy="0" ixz="0" iyy="102.27" iyz="0" izz="8.04"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_11">
+    <inertial>
+      <mass value="324.9792"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="105.44" ixy="0" ixz="0" iyy="102.27" iyz="0" izz="8.04"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_12">
+    <inertial>
+      <mass value="324.9792"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="105.44" ixy="0" ixz="0" iyy="102.27" iyz="0" izz="8.04"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_13">
+    <inertial>
+      <mass value="324.9792"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="105.44" ixy="0" ixz="0" iyy="102.27" iyz="0" izz="8.04"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_hand.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_2">
+    <inertial>
+      <mass value="235.864554"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="7.6912" ixy="0" ixz="0" iyy="55.3137" iyz="0" izz="49.27456"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_3">
+    <inertial>
+      <mass value="235.864554"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="7.6912" ixy="0" ixz="0" iyy="55.3137" iyz="0" izz="49.27456"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_4">
+    <inertial>
+      <mass value="235.864554"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="7.6912" ixy="0" ixz="0" iyy="55.3137" iyz="0" izz="49.27456"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/r_arm.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_6">
+    <inertial>
+      <mass value="361.94"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="10.974" ixy="0" ixz="0" iyy="83.88" iyz="0" izz="85.4"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="../my_robot/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_7">
+    <inertial>
+      <mass value="361.94"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="10.974" ixy="0" ixz="0" iyy="83.88" iyz="0" izz="85.4"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_8">
+    <inertial>
+      <mass value="361.94"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="10.974" ixy="0" ixz="0" iyy="83.88" iyz="0" izz="85.4"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="link_9">
+    <inertial>
+      <mass value="361.94"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <inertia ixx="10.974" ixy="0" ixz="0" iyy="83.88" iyz="0" izz="85.4"/>
+    </inertial>
+    <collision name="collision">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <visual name="visual">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="./src/robo_pkg/src/FINA;L.dae" scale="1 1 1"/>
+      </geometry>
+    </visual>
+  </link>
+  <gazebo>
+      <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      	<robotNamespace>/simple_model</robotNamespace>
+      </plugin>
+  </gazebo>
+  
+  <transmission name="link_2_JOINT_7_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor2">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_2_JOINT_7">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+    
+
+  <transmission name="link_3_JOINT_5_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor3">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_3_JOINT_5">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+    
+  <transmission name="link_4_JOINT_6_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor4">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_4_JOINT_6">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+ 
+  <transmission name="link_6_JOINT_9_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor5">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_6_JOINT_9">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+
+  <transmission name="link_7_JOINT_10_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor6">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_7_JOINT_10">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+
+  <transmission name="link_0_JOINT_1_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor7">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_0_JOINT_1">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+  <transmission name="link_9_JOINT_11_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor8">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_9_JOINT_11">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+  <transmission name="link_0_JOINT_2_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor9">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_0_JOINT_2">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+
+  <transmission name="link_0_JOINT_3_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor10">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_0_JOINT_3">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+
+
+  <transmission name="link_1_JOINT_8_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor11">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_1_JOINT_8">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>
+  
+  <transmission name="link_8_JOINT_12_trans">
+    	<type>transmission_interface/SimpleTransmission</type>
+    	<actuator name="motor11">
+        	<mechanicalReduction>1</mechanicalReduction>
+    	</actuator>
+    	<joint name="link_8_JOINT_12">
+      		<hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    	</joint>
+  </transmission>  
+    
+    
+</robot>

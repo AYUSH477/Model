@@ -1,0 +1,8 @@
+prefix=/home/ayush/catkinn_ws/devel
+
+Name: robo_pkg
+Description: Description of robo_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
